@@ -1,17 +1,16 @@
 import { Routes } from '@angular/router';
-import { AllBudgetsComponent } from './allBudgets/allBudgets.component';
-// import { DetailsComponent } from './details/details.component';
+import { loginFormComponent } from './logIn/login-form.component';
+import { BudgetComponent } from './budget/budget.component';
 
-const routeConfig: Routes = [
-/**  {
-    path: 'allBudgets',
-    component: AllBudgetsComponent,
-    title: 'All budgets'
+export const routeConfig: Routes = [
+{
+    path: 'login',
+    component: loginFormComponent,
+    title: 'Login Page'
   },
-  // {
-  //   path: 'details/:id',
-  //   component: DetailsComponent,
-  //   title: 'Home details'
-  // }
- **/
+  {
+    path: 'budget/:user_id',
+    component: BudgetComponent,
+    title: "User's budget"
+  }
 ];

@@ -5,13 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 
 @Component({
-  selector: 'app-body',
+  selector: 'login-form',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './loginForm.component.html',
-  // styleUrl: './loginForm.component.css'
+  templateUrl: './login-form.component.html',
+  // styleUrl: './login-form.component.css'
 })
-export class AppComponent {
+export class loginFormComponent {
   title = 'mochaMoney';
 }
 
